@@ -1,0 +1,163 @@
+/* ######## 1 - Reset Styles #########  */ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+ height: 100%;
+    overflow: auto;
+	line-height: 1;
+width:100%;
+min-width:100%;
+    background-color:#f7f7fa!important; 
+
+	font-family: 'Hind Vadodara', sans-serif;
+
+}
+
+ol, ul, li {
+	list-style: none!important;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a { 
+    text-decoration: none;
+
+}
+
+a:focus, a:hover { outline:0; border:0; text-decoration: none; cursor:pointer; }
+
+.clearfix::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.clearfix {
+    display: block;
+}
+.clearfix {
+    height: 1%;
+}
+
+div#container.clearfix  { position:relative; overflow:visible; }
+ a { 	font-family: 'Soleil', sans-serif;
+ }
+
+input { outline:0; border:0; }
+
+input:focus { outline:0; border:0; }
+
+.logo { 
+width:124px;
+  margin:150px auto 0;.
+ 
+}
+
+form.form-signin { width: 385px;
+margin: 0 auto; }
+  .form-signin-heading { 
+font-size:22px;
+color:#4a5867;
+text-align:center;
+margin:16px auto 70px;
+ } 
+form.form-signin a:hover { }
+form.form-signin input {  box-shadow:none; border: 1px solid #b7c4ce; font-size:15px; color:#78869d!important; width: 380px; height:52px; border:1px solid #b7c4ce; border-radius:4px;  -moz-border-radius:4px; -webkit-border-radius: 4px; margin :10px 0 10px;  padding:0 20px;  }
+
+form.form-signin input:focus {  border:1px solid #419bed; box-shadow:none; }
+ h3 { font-family:'soleil', sans-serif; font-size:17px; color:#4a5867; text-align:center; margin:95px 0 54px ;  } {  border:1px solid #419bed; box-shadow:none; width:200px; margin:0 auto; display:block; }
+
+
+ .form-control { height:52px; display:block; width:385px; padding:0 25px 0; margin:0  auto 14px;
+border-radius:3px;
+color:#898e96; font-size:16px;
+  }
+
+ 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #78869d;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #78869d;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #78869d;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #78869d;
+}
+ .btn-primary {  
+width: 200px;
+height: 48px;
+font-size:16px;
+float: left;
+background-color:#1966ff;
+border:1px solid #1752c8;
+border-radius:3px;
+margin:10px 0px 0 0px;
+display:block;
+}  
+
+.btn-sec { 
+color:#898e96;
+font-size:16px;
+float:right; width: 140px; line-height:70px;  }
+
+a.btn-trd { 
+text-align:center;
+float:none;
+color:#898e96;
+font-size:16px;
+ width: 330px; line-height:66px; margin:30px auto 0; display:block; font-family: 'soleil', sans-serif;
+font-size: 17px;
+color: #4a5867;
+text-align: center;
+  }
+
+a.btn-trd:hover { text-decoration: none; }
+ 
+#message { clear: both;
+ 
+padding: 30px 0 0; }

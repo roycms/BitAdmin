@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="../css/styles.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="../css/fonts/museo.css">
+  <link rel="stylesheet" href="../css/font-sl.css">
+  </head>
+
+  <body class="sigp-body">
+ 
+     <div class="sigp-left">
+      <form class="form-signup" id="usersignup" name="usersignup" method="post" action="http://maileden.com/login/createuser.php">
+       <a href="../index.php"> <img  src="../img/sogplogo.png" /></a>
+        <h2 class="form-signup-heading">Start prototyping for free</h2>
+
+ 
+           <input class="sigpo-lf" name="newuser" id="newuser" type="text" class="form-control" placeholder="First name" >
+ <input class="sigpo-rg" name="last_name" id="last_name" type="text" class="form-control" placeholder="Last name" >
+        <input name="email" id="email" type="text" class="form-control" placeholder="Email">
+
+ 
+        <input name="password1" id="password1" type="password" class="form-control" placeholder="Password">
+ 
+          <div class="clear"></div>
+<span>By creating an account, you agree to our <span class="trms">Terms of use</span>
+</span>
+        <button name="Submit" id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Create Account</button>
+
+        <div id="message"></div>
+      </form>
+
+        <h3 class="form-signup-heading">Already have an account ? <a href="main_login.php">Signin</a></h3>
+
+    </div>
+     
+
+
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+ 
+    <script src="../js/signup.js"></script>
+
+
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+<script>
+
+$( "#usersignup" ).validate({
+  rules: {
+	email: {
+		email: true,
+		required: true
+	},
+    password1: {
+      required: true,
+      minlength: 4
+	},
+    password2: {
+      equalTo: "#password1"
+    }
+  }
+});
+</script>
+
+  </body>
+</html>

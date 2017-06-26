@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="http://maileden.com/css/main.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/fonts/museo.css">
+  <link rel="stylesheet" href="../css/font-sl.css">
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="logo"><a href="../index.php"><img src="../img/logo-p.png" alt="maileden-logo" /></a></div>
+      <form class="form-signin" name="form1" method="post" action="http://maileden.com/login/checklogin.php">
+        <h2 class="form-signin-heading">Login to my account</h2>
+        <input name="myusername" id="myusername" type="text" class="form-control" placeholder="Your Email" autofocus>
+        <input name="mypassword" id="mypassword" type="password" class="form-control" placeholder="Password">
+        <!-- The checkbox remember me is not implemented yet...
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        -->
+        <button name="Submit" id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  <a  name="submitbtn" id="submitbtn" class="btn-sec" type="submit">Forgot Password ?</a>
+        <div id="message"></div>
+      </form>
+
+    </div> <!-- /container -->
+       <h3 class="form-signup-heading">Don't have an account ? <a href="signup.php">Signup</a></h3>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- The AJAX login script -->
+    <script src="js/login.js"></script>
+    <script src="js/forgetpassword.js"></script>
+
+  </body>
+</html>
